@@ -65,8 +65,6 @@ app.get('/delete/:id', async(req,res) => {
 });
 
 //edit items in database
-
-
 app.get('/complete/:id', async(req,res) => {
     const id = req.params.id;
     console.log(id);
