@@ -1,0 +1,23 @@
+<p>To do list</p>
+
+<form action='/' method='post'>
+    <input type='text' name='newTask' placeholder='new task'>
+    <button type='Submit' value='Submit'>ADD</button>
+</form>
+
+<p>{{err}}</p>
+<p>{{success}}</p>
+
+{{#each allTasks}}
+    <li {{#if status}}class="complete"{{/if}}>{{this.toDo}} <a href="/complete/{{this._id}}">Complete</a> <a href="/delete/{{this._id}}">delete</a></p></li>
+{{/each}}
+
+
+
+
+
+
+
+
+
+
